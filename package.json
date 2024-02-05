@@ -4,6 +4,10 @@
   "packageManager": "pnpm@8.15.0",
   "description": "package.json resolver",
   "type": "module",
+  "keywords": [
+    "package.json",
+    "resolve"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/dmZhan/resolve-package-json#readme",
   "bugs": {
