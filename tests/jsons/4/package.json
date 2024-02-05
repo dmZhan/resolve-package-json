@@ -1,0 +1,16 @@
+{
+  "name": "@dmzj/resolve-package-json",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.0",
+  "description": "My awesome typescript library",
+  "test4": "4",
+  "abc": "ttteeesssttt",
+  "efg": {
+    "a": 10,
+    "b": false,
+    "c": [
+      "1",
+      "2"
+    ]
+  }
+}

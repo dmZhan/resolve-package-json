@@ -1,0 +1,60 @@
+{
+  "name": "@dmzj/resolve-package-json",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.0",
+  "description": "package.json resolver",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/dmZhan/resolve-package-json#readme",
+  "bugs": {
+    "url": "https://github.com/dmZhan/resolve-package-json/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmZhan/resolve-package-json.git"
+  },
+  "author": "dmZhan <bmei.love>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@dmZhan/eslint-config": "^3.7.6",
+    "@dmZhan/prettier-config": "^2.0.0",
+    "@types/node": "^20.11.10",
+    "bumpp": "^9.3.0",
+    "eslint": "^8.56.0",
+    "fast-glob": "^3.3.2",
+    "prettier": "^3.2.4",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "prettier": "@sxzz/prettier-config"
+}
