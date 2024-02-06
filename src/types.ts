@@ -32,6 +32,14 @@ export interface pkgJson {
    */
   author?: string
   /**
+   * Dependencies are specified with a simple hash of package name to version range. The version range is a string which has one or more space-separated descriptors. Dependencies can also be identified with a tarball or git URL.
+   */
+  devDependencies?: Record<string, string>
+  /**
+   * Dependencies are specified with a simple hash of package name to version range. The version range is a string which has one or more space-separated descriptors. Dependencies can also be identified with a tarball or git URL.
+   */
+  dependencies?: Record<string, string>
+  /**
    * ToDo: add more fields
    */
 }
